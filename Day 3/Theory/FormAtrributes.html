@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+    <h1>Readonly attribute</h1>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" value="John" readonly><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" value="Doe" readonly><br><br>
+        <input type="submit">
+    </form>
+    <h1>Disabled Attribute</h1>
+    <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" value="John" disabled><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" value="Doe" disabled><br><br>
+        <h1>Required Attribute</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" required>
+            <input type="submit">
+        </form>
+    <h1>size attribute</h1>
+    <form>
+    <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" size="50"><br>
+        <h3>Maxlength</h3>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" maxlength="4" minlength="1" required><br>
+        <h3>Minlength</h3>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" minlength="4"><br>
+    </form>
+    <form>
+        <h1>Example of max and min length</h1>
+        <label for="datemax">Enter a date before 1980-01-01:</label><br>
+        <input type="date" max="1979-12-31"  required><br>
+        <label for="datemin">Enter a date before 2000-01-01:</label><br>
+        <input type="date" min="2000-01-02"  required><br>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" min="1" max="5">
+        <input type="submit">
+    </form>
+    <h1>Autocomplete & Autofocus attribute</h1>
+    <form autocomplete="on">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" autofocus><br><br>
+        <input type="submit">
+    </form>
+    <h1>Multiple attribute</h1>
+    <form>
+        <label for="files">Select file:</label>
+        <input type="file" accept=".pdf,.png" multiple>
+    </form>
+</table>
+</body>
+</html>
